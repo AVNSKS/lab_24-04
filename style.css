@@ -1,0 +1,245 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F8FC;
+    color: #333;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #4B6A9B; /* Soft Blue */
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo h1 {
+    color: white;
+    font-size: 1.8em;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 1.2em;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #1E3A8A; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background-color: #34D399; /* Light Green */
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero button:hover {
+    background-color: #059669; /* Emerald Green */
+  }
+  
+  /* About Me Section */
+  .about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #555;
+  }
+  
+  /* Skills Section */
+  .skills {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .skills h2 {
+    font-size: 2.5em;
+    color: #1E3A8A;
+    margin-bottom: 30px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .skill-item {
+    background-color: #34D399;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    background-color: #059669;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5em;
+    color: #1E3A8A;
+    margin-bottom: 30px;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h3 {
+    color: #1E3A8A;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    color: #555;
+    font-size: 1em;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #1E3A8A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+    }
+  
+    .skill-item {
+      margin: 10px 0;
+    }
+  }
